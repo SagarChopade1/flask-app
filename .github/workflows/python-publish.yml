@@ -22,8 +22,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
     - name: Sleep for 20 seconds
-      if: steps.setup.outputs.conclusion == 'success'
-      uses: actions/setup-python@v2
       with:
         time: '20s'
+#     - name: Sleep for 20 seconds
+#       if: steps.setup.outputs.conclusion == 'success'
+#       uses: actions/setup-python@v2
+#       with:
+#         time: '20s'
       
